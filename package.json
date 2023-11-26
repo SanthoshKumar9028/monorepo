@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "build": "lerna run build",
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "lerna:publish": "lerna publish --no-private"
   },
   "author": "",
   "license": "ISC",
