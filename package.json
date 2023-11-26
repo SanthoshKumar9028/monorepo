@@ -7,7 +7,8 @@
   "scripts": {
     "build": "lerna run build",
     "test": "lerna run test",
-    "publish": "lerna publish --no-private"
+    "lerna:prepublish": "npm run test && npm run build",
+    "publish": "npm run lerna:prepublish && lerna publish --no-private"
   },
   "author": "",
   "license": "ISC",

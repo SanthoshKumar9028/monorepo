@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import "./Container.css";
 
 export interface ContainerProps
   extends React.DetailedHTMLProps<
@@ -6,6 +7,12 @@ export interface ContainerProps
     HTMLDivElement
   > {}
 
-const Container: FC<ContainerProps> = (props) => <div {...props} />;
+const Container: FC<ContainerProps> = (props) => (
+  <div
+    {...props}
+    className="container"
+    style={{ border: "1px dashed lime", padding: "1em" }}
+  />
+);
 
 export default Container;
