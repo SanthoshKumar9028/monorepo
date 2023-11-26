@@ -2,7 +2,14 @@
   "name": "react-elements",
   "version": "0.0.0",
   "type": "module",
+  "private": false,
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
